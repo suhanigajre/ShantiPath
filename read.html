@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Read – ShantiPath</title>
+  <link rel="stylesheet" href="read.css" />
+</head>
+<body>
+  <div class="read-container">
+    <h1>📖 Shanti Reads</h1>
+    <p class="subtitle">Uplifting stories, timeless shlokas, and life-changing reads</p>
+
+    <!-- Motivational Stories -->
+    <section>
+      <h2>🌿 Motivational Stories</h2>
+      <div class="read-card">
+        <h3>The Bamboo and the Oak</h3>
+        <p>While the sturdy oak broke in the storm, the bamboo bent and survived — flexibility triumphs strength.</p>
+        <div class="actions">
+          <button onclick="like(this)">👍 Like <span>0</span></button>
+          <button onclick="shareText('The Bamboo and the Oak')">🔗 Share</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bhagavad Gita Shlokas -->
+    <section>
+      <h2>📜 Bhagavad Gita Shlokas</h2>
+
+      <div class="read-card">
+        <h3>2.47</h3>
+        <p><em>कर्मण्येवाधिकारस्ते मा फलेषु कदाचन...</em></p>
+        <p><strong>Meaning:</strong> Focus on your duty without attachment to the results.</p>
+        <div class="actions">
+          <button onclick="like(this)">👍 Like <span>0</span></button>
+          <button onclick="shareText('Bhagavad Gita 2.47')">🔗 Share</button>
+        </div>
+      </div>
+
+      <div class="read-card">
+        <h3>6.5</h3>
+        <p><em>उद्धरेदात्मनाऽऽत्मानं नीऽत्मानमवसादयेत्...</em></p>
+        <p><strong>Meaning:</strong> Lift yourself by your own efforts, never let yourself sink.</p>
+        <div class="actions">
+          <button onclick="like(this)">👍 Like <span>0</span></button>
+          <button onclick="shareText('Bhagavad Gita 6.5')">🔗 Share</button>
+        </div>
+      </div>
+
+      <div class="read-card">
+        <h3>17.15</h3>
+        <p><em>यत्पोष्येऽभिवृध्नाम्याश्च वैवस्वते तपतम्...</em></p>
+        <p><strong>Meaning:</strong> That offering which is pure and satisfying—with faith and without expectation—is divine.</p>
+        <div class="actions">
+          <button onclick="like(this)">👍 Like <span>0</span></button>
+          <button onclick="shareText('Bhagavad Gita 17.15')">🔗 Share</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book Suggestions -->
+    <section>
+      <h2>📚 Worthy Reads</h2>
+      <ul class="book-list">
+        <li><strong>Rich Dad Poor Dad</strong> – Robert Kiyosaki</li>
+        <li><strong>Atomic Habits</strong> – James Clear</li>
+        <li><strong>The Power of Now</strong> – Eckhart Tolle</li>
+        <li><strong>Man's Search for Meaning</strong> – Viktor Frankl</li>
+        <li><strong>Bhagavad Gita – A New Translation</strong> – Stephen Mitchell</li>
+        <li><strong>Awaken the Giant Within</strong> – Tony Robbins</li>
+      </ul>
+    </section>
+
+    <button class="back-btn" onclick="window.location.href='index.html'">🔙 Back to Home</button>
+  </div>
+
+  <script src="read.js"></script>
+</body>
+</html>

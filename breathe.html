@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Breathe | ShantiPath</title>
+  <link rel="stylesheet" href="breathe.css" />
+</head>
+<body>
+
+  <div class="breathe-container">
+    <h1>🌿 Just Breathe 🌿</h1>
+    <p class="instruction" id="instruction">Inhale…</p>
+
+    <div class="circle-container">
+      <div class="circle" id="circle"></div>
+    </div>
+
+    <audio id="bg-music" loop>
+      <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_74b06d45b3.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="controls">
+      <button onclick="toggleMusic()">🎵 Toggle Music</button>
+      <button onclick="window.location.href='index.html'">🔙 Back</button>
+    </div>
+  </div>
+
+  <script src="breathe.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journal | ShantiPath</title>
+  <link rel="stylesheet" href="journal.css">
+</head>
+<body>
+
+  <div class="journal-container">
+    <h1>📓 Your Shanti Journal</h1>
+    <p class="subtext">Write your feelings. It's safe here 🌿</p>
+
+    <textarea id="entry" placeholder="Dear Journal, today I feel..."></textarea>
+
+    <div class="buttons">
+      <button onclick="saveEntry()">💾 Save</button>
+      <button onclick="deleteAll()">🗑️ Delete All</button>
+      <button onclick="downloadEntries()">📥 Download</button>
+    </div>
+
+    <div class="entries-section">
+      <h2>✨ Your Entries</h2>
+      <ul id="entries-list"></ul>
+    </div>
+  </div>
+
+  <script src="journal.js"></script>
+</body>
+</html>

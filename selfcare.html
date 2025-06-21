@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Self-Care Checklist | ShantiPath</title>
+  <link rel="stylesheet" href="selfcare.css" />
+</head>
+<body>
+  <div class="checklist-container">
+    <h1>🧘‍♀️ Daily Self-Care Checklist</h1>
+    <p class="subtitle">Take time for yourself, you deserve it 💖</p>
+
+    <ul id="checklist">
+      <li><input type="checkbox" /> Drink Water 💧</li>
+      <li><input type="checkbox" /> Meditate for 5 mins 🧘‍♂️</li>
+      <li><input type="checkbox" /> Write in Journal 📓</li>
+      <li><input type="checkbox" /> Stretch or Walk 🚶‍♀️</li>
+      <li><input type="checkbox" /> Positive Affirmations 🌞</li>
+    </ul>
+
+    <div class="actions">
+      <input type="text" id="new-task" placeholder="Add your own..." />
+      <button onclick="addTask()">➕ Add</button>
+      <button onclick="resetChecklist()">🔄 Reset</button>
+    </div>
+  </div>
+
+  <script src="selfcare.js"></script>
+</body>
+</html>

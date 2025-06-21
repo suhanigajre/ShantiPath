@@ -1,0 +1,152 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to top right, #d4f1ed, #e8fbf6);
+  text-align: center;
+  color: #2c4c4a;
+  overflow-x: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.calm-container {
+  padding: 60px 20px;
+  animation: fadeIn 2s ease-in;
+  z-index: 2;
+  position: relative;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #3c6e69;
+  animation: floatText 4s ease-in-out infinite;
+}
+
+/* Visuals */
+.visuals img {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin: 30px auto;
+  animation: slowPulse 8s ease-in-out infinite;
+  display: block;
+}
+
+/* Breathing Circle */
+.breathing-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 20px auto;
+  background: rgba(162, 217, 204, 0.5);
+  animation: breathe 6s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(162, 217, 204, 0.7);
+}
+
+/* Button Controls */
+.controls {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.controls button {
+  background: linear-gradient(135deg, #a2d9cc, #bceee1);
+  border: none;
+  padding: 14px 30px;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.controls button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #86c3b6, #a9e2d4);
+}
+
+/* Volume Slider */
+#volume-control {
+  margin-top: 20px;
+  width: 200px;
+  accent-color: #5cbfb0;
+}
+
+/* Music Info */
+.music-info {
+  font-size: 0.95rem;
+  color: #5c827e;
+  margin-top: 25px;
+}
+
+/* Cloud Background Animation */
+.animated-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.cloud {
+  position: absolute;
+  background: url('https://i.imgur.com/y7P7xO3.png') no-repeat center;
+  background-size: contain;
+  width: 200px;
+  height: 100px;
+  opacity: 0.3;
+  animation: moveClouds 60s linear infinite;
+}
+
+.cloud1 { top: 20%; left: -200px; animation-delay: 0s; }
+.cloud2 { top: 50%; left: -300px; animation-delay: 10s; }
+.cloud3 { top: 75%; left: -250px; animation-delay: 20s; }
+
+/* Animations */
+@keyframes slowPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@keyframes floatText {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes breathe {
+  0% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+
+@keyframes moveClouds {
+  0% { left: -300px; }
+  100% { left: 100%; }
+}

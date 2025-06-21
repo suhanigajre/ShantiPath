@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Talk with Shanti AI</title>
+  <link rel="stylesheet" href="talk.css" />
+</head>
+<body>
+  <div class="talk-container">
+    <h1>💬 Talk to <span>Shanti</span></h1>
+    <p class="subtitle">Tell me how you're feeling today. I'm here to support you 🌸</p>
+
+    <div id="chat-box" class="chat-box">
+      <!-- Chat messages will appear here -->
+    </div>
+
+    <div class="guide-message">
+      🧘‍♀️ You can say things like:<br />
+      <em>“I’m feeling sad”</em>, <em>“I’m happy today”</em>, <em>“I feel anxious”</em>, <em>“I’m angry”</em>, <em>“I feel calm”</em> 💬
+    </div>
+
+    <div class="input-container">
+      <input type="text" id="user-input" placeholder="Type how you feel..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <div class="button-group">
+      <button id="download-btn">📄 Download Chat</button>
+      <button onclick="clearChat()">🗑️ Clear Chat</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Made with 💛 for your peace by <strong>ShantiPath</strong>
+  </footer>
+
+  <script src="talk.js"></script>
+</body>
+</html>

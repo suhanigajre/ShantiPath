@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #eafaf6, #d4f2ea);
+  color: #2f4f4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.affirmation-container {
+  text-align: center;
+  max-width: 600px;
+  background: #ffffffaa;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.2s ease-in;
+}
+
+h1 {
+  color: #3b6d67;
+  margin-bottom: 20px;
+}
+
+.affirmation-card {
+  background-color: #dff4ed;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  color: #375954;
+  font-style: italic;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+.buttons button {
+  background-color: #a0d7c6;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #88cbb5;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}

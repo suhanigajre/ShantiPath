@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CalmSpace – Relaxation Zone</title>
+  <link rel="stylesheet" href="calmspace.css" />
+</head>
+<body>
+    <div class="animated-background">
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="cloud cloud3"></div>
+</div>
+  <div class="calm-container">
+    <h1>🕊️ Welcome to CalmSpace</h1>
+    <p class="quote">“Peace comes from within. Do not seek it without.” – Buddha</p>
+
+    <div class="visuals">
+      <img src="images/nature.jpg" alt="Calming Visual" />
+    </div>
+
+    <div class="controls">
+      <button id="music-toggle">▶️ Play Music</button>
+      <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.6" title="Volume"/>
+    </div>
+    <!-- Calming background music -->
+<audio id="calm-music">
+  <source src="music/serene-garden.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+
+    <!-- Music source: Calming and copyright-free -->
+    <audio id="calm-music">
+      <source src="https://cdn.pixabay.com/audio/2023/03/01/audio_ea6d79a0aa.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <script src="calmspace.js"></script>
+</body>
+</html>
